@@ -1,2 +1,2 @@
-# I-Learned
-A repo/blog/whatever where I log the things I have learned as a beginner and where hopefully some people may get some use out of my blabber and maybe even get some critique from others who may have more experience and knowledge.
+# Learning
+Being a very unexperienced programmer, I will just randomly blog and add things to this repo I want to learn, or have learned. I will be making small milestones, and seeing where they lead me. I do not plan on fully finishing anything as most of these things may be somewhat ambitious for me, but as long as I come out of the project with a better understanding of something that is a win in my book.
