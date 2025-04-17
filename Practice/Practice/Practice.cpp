@@ -4,8 +4,9 @@
 
 using namespace std;
 
-enum TrafficLightState { RED, GREEN, YELLOW };
+enum TrafficLightState { RED, GREEN, YELLOW }; // Enum for the states of the traffic light.
 
+// Fucntion which takes the state and uses the corresponding switch statement to print the correct case to the console.
 void printTrafficLightState(TrafficLightState state) {
 
     switch (state) {
@@ -22,9 +23,10 @@ void printTrafficLightState(TrafficLightState state) {
             cout << "Invalid state" << endl;
             break;
     }
-    this_thread::sleep_for(std::chrono::seconds(2)); // Sleep for 2 seconds
+    this_thread::sleep_for(std::chrono::seconds(2)); // Sleep for 2 seconds. This adds a delay so that everything isnt spammed to the console at once.
 }
 
+// Function which iterates through the enum based on the current state of the enum.
 TrafficLightState getNextState(TrafficLightState currentState) {
 	switch (currentState) {
 	case RED:
@@ -34,16 +36,16 @@ TrafficLightState getNextState(TrafficLightState currentState) {
 	case YELLOW:
 		return RED;
 	default:
-		return RED; // Default to RED if an invalid state is encountered
+		return RED; // Default to RED if an invalid state is encountered.
 	}
 }
 
 int main() {
-	TrafficLightState currentState = RED; // Start with RED state
+	TrafficLightState currentState = RED; // Start with RED state.
     
     for (int i = 0; i < 10; i++) {
         printTrafficLightState(currentState);
-		currentState = getNextState(currentState); // Get the next state
+	currentState = getNextState(currentState); // Get the next state.
     }
 
 	return 0;
